@@ -1,0 +1,143 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-size:100%;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    color:var(--LightGray);
+    padding:3.5rem 1.645rem;
+    background:var(--LightGray);
+}
+    
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: rgb(192, 223, 52);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+
+}
+
+.header{
+    background:#fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding:1rem;
+}
+.header h2{
+    color:var(--Cyan);
+    padding:0.38rem 0 1.3rem 0;
+}
+.header h3{
+    color:var(--BrightYellow);
+    font-size:0.826rem;
+    padding-bottom: 1.1rem;
+}
+.header p{
+    color:var(--GrayishBlue);
+    font-size:0.66rem;
+    line-height: 2;
+    padding-bottom:0.33rem;
+}
+.sub-sec{
+    background:var(--Cyan);
+    padding:1rem;
+}
+.sub-sec h3{
+    color:#fff;
+    font-size:0.926rem;
+    padding-top:0.2rem;
+    padding-bottom: 0.89rem;
+    opacity: 0.9;
+}
+.price{
+    font-size:1.589rem;
+    font-weight:bold;
+    color:#fff;
+    
+
+}
+
+.sub-sec sup{
+    font-style: normal;
+    font-weight: 400;
+    font-size:0.79rem;
+    padding-left:0.27rem;
+    opacity: 0.6;
+    
+}
+
+.sub-sec p{
+    padding:0.3rem 0 1.5rem 0;
+    font-size:0.8rem;
+}
+
+.btn{
+    width:100%;
+    padding:0.8rem;
+    margin-bottom: 0.27rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border:0;
+    background:var(--BrightYellow);
+    color:#fff;
+    -webkit-box-shadow: 1px 8px 17px 8px rgba(61,161,156,1);
+    -moz-box-shadow: 1px 8px 17px 8px rgba(61,161,156,1);
+    box-shadow: 1px 8px 17px 8px rgba(61,161,156,1);    
+    
+}
+.btn:hover , .btn:focus{
+    outline:0;
+    background:#b7d134;
+    cursor: pointer;
+}
+.footer{
+    padding:1rem;
+    background:hsl(179, 54%, 48%);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    
+}
+.footer h2{
+    font-size:0.89rem;
+    margin-top:0.3rem;
+    padding-bottom: 1rem;
+    font-weight:400;
+}
+.footer ul {
+    list-style-type: none;
+    font-size:0.7rem;
+    line-height: 1.5;
+ 
+    
+}
+
+@media screen and (min-width: 990px) {
+
+  
+    .container{
+        display:grid;
+        grid-template-columns:19.8rem 19.8rem;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+
+    .header{
+        grid-column: 1/3;
+        grid-row:1/2;
+    }
+    .sub-sec{
+        grid-column: 1/2;
+        grid-row:2/3;
+        border-bottom-left-radius: 7px;
+    }
+    .footer{
+        grid-column: 2/3;
+        grid-row:2/3;
+        border-bottom-left-radius: 0;
+    }
+
+}
