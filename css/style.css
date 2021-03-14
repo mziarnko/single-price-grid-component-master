@@ -2,10 +2,11 @@
     padding:0;
     margin:0;
     box-sizing:border-box;
-    font-size:100%;
+    
 }
 
 body{
+    
     font-family: 'Karla', sans-serif;
     color:var(--LightGray);
     padding:3.5rem 1.645rem;
@@ -20,6 +21,10 @@ body{
 
 }
 
+.container{
+    
+    margin:0 auto;
+}
 .header{
     background:#fff;
     border-top-left-radius: 7px;
@@ -119,9 +124,10 @@ body{
 
   
     .container{
+       
         display:grid;
-        grid-template-columns:19.8rem 19.8rem;
-        grid-template-rows: auto auto;
+        grid-template-columns:318px 318px;
+        grid-template-rows: 216px 259px;
         justify-content: center;
     }
 
