@@ -11,6 +11,11 @@ body{
     color:var(--LightGray);
     padding:3.5rem 1.645rem;
     background:var(--LightGray);
+    display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    height: 100vh;
 }
     
 :root{
@@ -121,7 +126,14 @@ body{
 }
 
 @media screen and (min-width: 990px) {
-
+body{
+    display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    height: 100vh;
+    
+}
   
     .container{
        
